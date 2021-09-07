@@ -12,3 +12,18 @@ h3{
     color:cornflowerblue;
     font-weight: 400;
 }
+input:focus{
+    color :#dd5555;
+    font-size: 20px;
+}
+button{
+    margin-top: 2%;
+    background-color:cadetblue;
+    color : whitesmoke;
+    border-radius: 5px
+}
+button:hover{
+    color: cadetblue;
+    background-color:whitesmoke;
+    border-radius: 5px;
+}
