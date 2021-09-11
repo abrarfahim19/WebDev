@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Testing</title>
+    <link rel="shortcut icon" href="resource/peter.png" type="image/x-icon">
     <style>
         td, th{
             border: 1px solid black;
             padding: 0 10px;
 
+        }
+        table{
+            text-align: center;
         }
     </style>
 </head>
@@ -48,6 +52,29 @@
                 </tr>
             </tbody>
         </table>
+    </section>
+
+    <section>
+        <form action="">
+            <p>Enter Your Name<input type="text" placeholder="ignore capitalization"></p>
+            <p>Enter Your Tel. Number<input type="tel"></p>
+            <p>Enter Your Email<input type="email"></p>
+
+            <fieldset>
+                <legend>Select Your Gender</legend>
+                <p><label for="male"><input type="radio" name="gender" id = "male">Male</label></p>
+                <p><label for="female"><input type="radio" name="gender" id = "female">Female</label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>What flavour do you prefer?</legend>
+                <p><label for="spicy"><input type="checkbox" id="spicy">Spicy</label></p>
+                <p><label for="sweet"><input type="checkbox" id="sweet">Sweet</label></p>
+                <p><label for="sour"><input type="checkbox" id="sour">Sour</label></p>
+            </fieldset>
+            <p><label for="instruction">Extra Instruction: <textarea name="" id="instruction" cols="30" rows="10"></textarea></label></p>
+            <button type="submit" style="color:cadetblue" >Submit your Form.</button>
+        </form>
     </section>
 
     <section>
