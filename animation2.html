@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle to Triangle Animation</title>
+    <style>
+        .field{
+            height: 300px;
+            background-color: aliceblue;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: aqua;
+            position:relative;
+            left: 10px;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            position: relative;
+            left: 10px;
+            bottom: 100px
+        }
+        @keyframes shrink {
+            0%{
+                scale: 1;
+            }
+            100%{
+                scale: 0;
+                
+            }
+            
+        }
+
+        @keyframes grow {
+            0%{
+                scale:0;
+            }
+            50%{
+                scale:0.5;
+            }
+            100%{
+                scale:1;
+            }           
+        }
+
+        .field:hover .square{
+            animation-name: shrink;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+            animation-direction:normal;
+ 
+        }
+        
+        .field:hover .circle{
+            animation: grow 1s ease-in 2s 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="circle"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>
